@@ -50,21 +50,15 @@ header {
 }
 /*HEADER*/
 
-header > img:nth-child(1) {
+.first-layer > figure:nth-child(1) {
     position: absolute;
-    object-fit: none;
     bottom: 0;
-    z-index: 1;
+    left: 0;
 }
-.first-layer {
-    display: flex;
-    justify-content: space-between;
+.first-layer > figure:nth-child(2) {
     position: absolute;
-    justify-items: center;
-    width: 90%;
     bottom: 0;
-    z-index: 1;
-    margin: 0px 95px;
+    right: 0;
 }
 
 button.big-button.black {
@@ -77,7 +71,7 @@ button.big-button.download > img {
 
 /*navbar*/
 .navbar {
-    padding: 0 363px;
+    padding: 0.5% 5%;
 }
 
 .navbar > nav {
@@ -108,9 +102,12 @@ button.big-button.download > img {
     flex-direction: column;
     position: absolute;
     z-index: 2;
-    margin: 110px 560px 0 560px;
+    margin: auto;
+    left: 0;
+    right: 0;
     text-align: center;
     color: white;
+    padding-top: 5%;
 }
 
 .jumbotron h1 {
@@ -126,8 +123,8 @@ button.big-button.download > img {
 }
 .button-header {
     display: flex;
-    justify-content: space-evenly;
-    padding: 0 28px;
+    justify-content: center;
+    gap: 2%;
 }
 /*MAIN*/
 
@@ -136,7 +133,7 @@ button.big-button.download > img {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    padding-bottom: 110px;
+    padding: 3% 0;
     gap: 70px;
 }
 
@@ -165,7 +162,7 @@ button.big-button.download > img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px 363px;
+    padding: 5% 0;
     background-color: #f6f6f6;
 }
 
@@ -184,7 +181,8 @@ button.big-button.download > img {
     position: relative;
 }
 .img-full {
-    margin: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .button-full > h2 {
@@ -217,7 +215,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 100px 363px;
+    padding: 5%;
+    width: 100%;
     gap: 10px;
     color: white;
     background-color: #23272a;
@@ -317,10 +316,6 @@ footer {
     }
     /*main*/
 
-    .text-img-container {
-        padding: 50px 30px;
-    }
-
     .text p,
     .text-full p {
         font-size: 16px;
@@ -341,10 +336,6 @@ footer {
     }
 
     /*main*/
-
-    article {
-        margin-right: -177px;
-    }
 
     .text-img-container {
         display: flex;
