@@ -83,7 +83,8 @@ button.big-button.download > img {
 
 .navbar nav ul {
     display: flex;
-    gap: 40px;
+    justify-content: center;
+    gap: 10%;
     list-style: none;
 }
 
@@ -240,7 +241,7 @@ footer {
 
 .social {
     display: flex;
-    gap: 20px;
+    gap: 2%;
     margin-top: 50px;
 }
 
@@ -265,7 +266,8 @@ footer {
 }
 
 .footer-right ul {
-    width: 200px;
+    flex: 1;
+    max-width: 25%;
     color: #404eed;
     list-style: none;
 }
@@ -311,28 +313,82 @@ footer {
         display: flex;
         flex-direction: column;
         flex-flow: wrap;
-        gap: 30px;
+        gap: 8%;
         font-size: 14px;
     }
+
     /*main*/
+
+    .text-img-container {
+        padding: 4%;
+    }
 
     .text p,
     .text-full p {
         font-size: 16px;
     }
+
+    .text > h2 {
+        font-size: 25px;
+    }
     .text-img-container-full {
         padding: 40px 0;
+    }
+    /*main*/
+    .first-layer > figure:nth-child(1) {
+        display: none;
+    }
+
+    .jumbotron {
+        text-align: left;
+        padding-left: 3%;
+        margin: 0;
+        width: 50%;
+    }
+
+    .button-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .big-button {
+        width: 60%;
+        padding: 1em 1em;
+    }
+
+    .big-button.download {
+        margin-bottom: 3%;
+    }
+
+    .jumbotron h1 {
+        font-size: 2.5rem;
+        font-weight: 900;
+        margin-bottom: 30px;
     }
 }
 
 @media (max-width: 480px) {
     /*footer*/
-    footer {
-        margin-right: -177px;
-    }
+
     .top {
         flex-direction: column;
-        gap: 40px;
+        margin-top: 1%;
+    }
+
+    .footer-left {
+        flex: 1;
+        max-width: 25%;
+        margin-bottom: 8%;
+    }
+
+    .footer-right ul {
+        max-width: 50%;
+        padding: 0 10px;
+    }
+
+    .footer-right {
+        flex-wrap: wrap;
+        gap: 15%;
     }
 
     /*main*/
@@ -341,6 +397,7 @@ footer {
         display: flex;
         flex-direction: column-reverse;
         align-items: flex-start;
+        padding: 4%;
     }
 
     .text-img-container:nth-child(even) {
@@ -379,5 +436,26 @@ footer {
     .stars {
         bottom: 158px;
         left: -19px;
+    }
+
+    /*header*/
+    header {
+        height: 950px;
+    }
+
+    .navbar nav ul {
+        /* gap: 3%; */
+        display: none;
+    }
+
+    .jumbotron {
+        width: 90%;
+    }
+
+    .first-layer > figure:nth-child(2) {
+        display: none;
+    }
+    .first-layer > figure:nth-child(1) {
+        display: block;
     }
 }
